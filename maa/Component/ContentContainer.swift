@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct ContentContainer: View {
+    @Binding var currentTab: Tab
+    let containerWidth: CGFloat
+    let containerHeight: CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 10)
+            .foregroundColor(.maaBackground)
+            .frame(width: containerWidth,
+                   height: containerHeight)
+            .overlay(
+                VStack {
+                    switch currentTab { // TODO: - 보기 복잡함
+                    case .todo:
+                        TodoView()
+                    case .info:
+                        InfoView()
+                    case .setting:
+                        SettingView()
+                    }
+                }.frame(width: containerWidth * 0.91,
+                        height: containerHeight * 0.9)
+            )
     }
 }
 
 #Preview {
-    ContentContainer()
+    ContentContainer(currentTab: .constant(.todo), 
+                     containerWidth: 393,
+                     containerHeight: 852 * 0.7)
 }

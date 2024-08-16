@@ -34,7 +34,7 @@ struct YourApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentContainer()
+                MaaView()
                     .modelContainer(modelContainer)
             }
         }

@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct CharacterInfo: View {
+    let InfoWidth: CGFloat
+    let InfoHeight: CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 10)
+            .frame(width: InfoWidth,
+                   height: InfoHeight)
+            .foregroundColor(.maaBackground)
     }
 }
 
 #Preview {
-    CharacterInfo()
+    CharacterInfo(InfoWidth: 393, InfoHeight: 852)
 }
