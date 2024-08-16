@@ -20,6 +20,7 @@
 		8CB4A8392C6F73A300BFC231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */; };
 		8CB4A83C2C6F741200BFC231 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83B2C6F741200BFC231 /* FirebaseAnalytics */; };
 		8CB4A83E2C6F74AE00BFC231 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83D2C6F74AE00BFC231 /* FirebaseMessaging */; };
+		8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8462C6F9F6100BFC231 /* MaaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CB4A83F2C6F776700BFC231 /* maa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maa.entitlements; sourceTree = "<group>"; };
 		8CB4A8402C6F779200BFC231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8CB4A8462C6F9F6100BFC231 /* MaaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				8CB4A8272C6F674200BFC231 /* BottomTab.swift */,
 				8CB4A82C2C6F67F100BFC231 /* CharacterInfo.swift */,
 				8CB4A82E2C6F68F600BFC231 /* ContentContainer.swift */,
+				8CB4A8462C6F9F6100BFC231 /* MaaView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */,
 				8CB4A82B2C6F677900BFC231 /* InfoView.swift in Sources */,
 				8CB4A8252C6F66E900BFC231 /* TodoView.swift in Sources */,
 				8CB4A82F2C6F68F600BFC231 /* ContentContainer.swift in Sources */,
