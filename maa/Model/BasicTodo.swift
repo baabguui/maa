@@ -17,11 +17,11 @@ func insertBasicTodo(modelContext: ModelContext) {
 }
 
 let basicTodos: [Todo] = [
-    Todo(categoryRawValue: "day", index: 0, content: "일간 퀘스트", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "day", index: 1, content: "몬스터 파크", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "day", index: 2, content: "일간 보스", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "day", index: 3, content: "데일리 기프트/출석", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "week", index: 0, content: "주간 퀘스트", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "event", index: 0, content: "주간 보스", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "event", index: 1, content: "강렬 힘 결정", checkDate: nil, isCustom: false),
-    Todo(categoryRawValue: "event", index: 2, content: "이벤트 주간 출석", checkDate: nil, isCustom: false)]
+    Todo(categoryRawValue: "day", content: "일간 퀘스트", checkDate: nil,isActive: true, isCustom: false),
+    Todo(categoryRawValue: "day",content: "몬스터 파크", checkDate: nil,isActive: true, isCustom: false),
+    Todo(categoryRawValue: "day", content: "일간 보스", checkDate: nil, isActive: false,isCustom: false),
+    Todo(categoryRawValue: "day", content: "데일리 기프트/출석", checkDate: nil, isActive: true,isCustom: false),
+    Todo(categoryRawValue: "week", content: "주간 퀘스트", checkDate: nil,isActive: false, isCustom: false),
+    Todo(categoryRawValue: "event", content: "주간 보스", checkDate: nil, isActive: true,isCustom: false),
+    Todo(categoryRawValue: "event", content: "강렬 힘 결정", checkDate: nil,isActive: true, isCustom: false),
+    Todo(categoryRawValue: "event", content: "이벤트 주간 출석", checkDate: nil, isActive: false,isCustom: false)]

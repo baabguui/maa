@@ -9,6 +9,8 @@ import Foundation
 import SwiftData
 import SwiftUI
 
+// TODO: - account: [Hero] , Hero: [Todo]
+
 @Model
 class Todo {
     let id = UUID()
@@ -21,7 +23,6 @@ class Todo {
             categoryRawValue = newValue.rawValue
         }
     }
-    var index: Int
     var content: String
     var checkDate: Date?
     var isDone: Bool {
@@ -41,14 +42,15 @@ class Todo {
             return false // TODO: - checkDate가 저번주 목요일 0시 ~ 이번주 목요일 0시 사이인지 확인
         }
     }
+    var isActive: Bool
     // MARK: - 삭제 가능 여부
     var isCustom: Bool
     
-    init(categoryRawValue: String, index: Int, content: String, checkDate: Date? = nil, isCustom: Bool) {
+    init(categoryRawValue: String, content: String, checkDate: Date? = nil, isActive: Bool, isCustom: Bool) {
         self.categoryRawValue = categoryRawValue
-        self.index = index
         self.content = content
         self.checkDate = checkDate
+        self.isActive = isActive
         self.isCustom = isCustom
     }
 }
@@ -78,9 +80,5 @@ enum Category: String, CaseIterable {
         case .event:
             return Color.third
         }
-    }
-    
-    static var allCase: [Category] {
-        Category.allCases.map {$0}
     }
 }
