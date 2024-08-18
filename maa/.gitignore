@@ -64,3 +64,4 @@ fastlane/test_output
 .gitignore
 .xcconfig
 *.xcuserstate
+xcuserdata/
