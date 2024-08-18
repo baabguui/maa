@@ -33,7 +33,7 @@
 		8C17B7812C70E15E0094719B /* MapleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleAPI.swift; sourceTree = "<group>"; };
 		8C17B7832C70E1DD0094719B /* MapleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleInfo.swift; sourceTree = "<group>"; };
 		8CB2756D2C72429400AD39EA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		8CB275702C72486A00AD39EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8CB275702C72486A00AD39EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = maa/.gitignore; sourceTree = "<group>"; };
 		8CB4A8122C6F665D00BFC231 /* maa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB4A8152C6F665D00BFC231 /* maaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maaApp.swift; sourceTree = "<group>"; };
 		8CB4A8192C6F665E00BFC231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 		8CB4A8092C6F665D00BFC231 = {
 			isa = PBXGroup;
 			children = (
+				8CB275702C72486A00AD39EA /* .gitignore */,
 				8CB4A8142C6F665D00BFC231 /* maa */,
 				8CB4A8132C6F665D00BFC231 /* Products */,
 			);
@@ -94,7 +95,6 @@
 				8CB4A8232C6F66D600BFC231 /* Todo */,
 				8CB4A8152C6F665D00BFC231 /* maaApp.swift */,
 				8C17B7812C70E15E0094719B /* MapleAPI.swift */,
-				8CB275702C72486A00AD39EA /* .gitignore */,
 				8CB2756D2C72429400AD39EA /* Config.xcconfig */,
 				8CB4A8192C6F665E00BFC231 /* Assets.xcassets */,
 				8CB4A81B2C6F665E00BFC231 /* Preview Content */,
