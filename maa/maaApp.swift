@@ -22,7 +22,7 @@ struct YourApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var modelContainer: ModelContainer = {
-        let schema = Schema([Todo.self])
+        let schema = Schema([Todo.self, Hero.self])
         let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: false)
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -30,12 +30,14 @@ struct YourApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    @State var mapleAPI = MapleAPI()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MaaView()
+                MaaView(mapleAPI: mapleAPI)
                     .modelContainer(modelContainer)
+                    .environment(mapleAPI)
             }
         }
     }
