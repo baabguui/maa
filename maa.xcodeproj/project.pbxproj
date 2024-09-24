@@ -10,6 +10,7 @@
 		8C17B7802C70888B0094719B /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B77F2C70888B0094719B /* EditTodoView.swift */; };
 		8C17B7822C70E15E0094719B /* MapleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B7812C70E15E0094719B /* MapleAPI.swift */; };
 		8C17B7842C70E1DD0094719B /* MapleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B7832C70E1DD0094719B /* MapleInfo.swift */; };
+		8C9E6EED2CA3383000263B50 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E6EEC2CA3383000263B50 /* InfoDetailView.swift */; };
 		8CB275712C72486A00AD39EA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8CB275702C72486A00AD39EA /* .gitignore */; };
 		8CB4A8162C6F665D00BFC231 /* maaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8152C6F665D00BFC231 /* maaApp.swift */; };
 		8CB4A81A2C6F665E00BFC231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4A8192C6F665E00BFC231 /* Assets.xcassets */; };
@@ -17,8 +18,7 @@
 		8CB4A8252C6F66E900BFC231 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8242C6F66E900BFC231 /* TodoView.swift */; };
 		8CB4A8282C6F674200BFC231 /* BottomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8272C6F674200BFC231 /* BottomTab.swift */; };
 		8CB4A82B2C6F677900BFC231 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A82A2C6F677900BFC231 /* InfoView.swift */; };
-		8CB4A82D2C6F67F100BFC231 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A82C2C6F67F100BFC231 /* CharacterInfo.swift */; };
-		8CB4A82F2C6F68F600BFC231 /* ContentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A82E2C6F68F600BFC231 /* ContentContainer.swift */; };
+		8CB4A82D2C6F67F100BFC231 /* InfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A82C2C6F67F100BFC231 /* InfoContainer.swift */; };
 		8CB4A8322C6F699300BFC231 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8312C6F699300BFC231 /* SettingView.swift */; };
 		8CB4A8352C6F69A800BFC231 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8342C6F69A800BFC231 /* Todo.swift */; };
 		8CB4A8392C6F73A300BFC231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */; };
@@ -26,12 +26,14 @@
 		8CB4A83E2C6F74AE00BFC231 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83D2C6F74AE00BFC231 /* FirebaseMessaging */; };
 		8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8462C6F9F6100BFC231 /* MaaView.swift */; };
 		8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */; };
+		8CF99DB52CA2745800BF45EF /* TodoItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C17B77F2C70888B0094719B /* EditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoView.swift; sourceTree = "<group>"; };
 		8C17B7812C70E15E0094719B /* MapleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleAPI.swift; sourceTree = "<group>"; };
 		8C17B7832C70E1DD0094719B /* MapleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleInfo.swift; sourceTree = "<group>"; };
+		8C9E6EEC2CA3383000263B50 /* InfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
 		8CB2756D2C72429400AD39EA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		8CB275702C72486A00AD39EA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = maa/.gitignore; sourceTree = "<group>"; };
 		8CB4A8122C6F665D00BFC231 /* maa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,15 +43,15 @@
 		8CB4A8242C6F66E900BFC231 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		8CB4A8272C6F674200BFC231 /* BottomTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTab.swift; sourceTree = "<group>"; };
 		8CB4A82A2C6F677900BFC231 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		8CB4A82C2C6F67F100BFC231 /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
-		8CB4A82E2C6F68F600BFC231 /* ContentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentContainer.swift; sourceTree = "<group>"; };
+		8CB4A82C2C6F67F100BFC231 /* InfoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContainer.swift; sourceTree = "<group>"; };
 		8CB4A8312C6F699300BFC231 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8CB4A8342C6F69A800BFC231 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CB4A83F2C6F776700BFC231 /* maa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maa.entitlements; sourceTree = "<group>"; };
 		8CB4A8402C6F779200BFC231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8CB4A8462C6F9F6100BFC231 /* MaaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaView.swift; sourceTree = "<group>"; };
+		8CB4A8462C6F9F6100BFC231 /* MaaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MaaView.swift; path = Component/MaaView.swift; sourceTree = "<group>"; };
 		8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTodo.swift; sourceTree = "<group>"; };
+		8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				8CB4A8292C6F676700BFC231 /* Info */,
 				8CB4A8232C6F66D600BFC231 /* Todo */,
 				8CB4A8152C6F665D00BFC231 /* maaApp.swift */,
+				8CB4A8462C6F9F6100BFC231 /* MaaView.swift */,
 				8C17B7812C70E15E0094719B /* MapleAPI.swift */,
 				8CB2756D2C72429400AD39EA /* Config.xcconfig */,
 				8CB4A8192C6F665E00BFC231 /* Assets.xcassets */,
@@ -123,9 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8CB4A8272C6F674200BFC231 /* BottomTab.swift */,
-				8CB4A82C2C6F67F100BFC231 /* CharacterInfo.swift */,
-				8CB4A82E2C6F68F600BFC231 /* ContentContainer.swift */,
-				8CB4A8462C6F9F6100BFC231 /* MaaView.swift */,
+				8CB4A82C2C6F67F100BFC231 /* InfoContainer.swift */,
+				8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8CB4A82A2C6F677900BFC231 /* InfoView.swift */,
+				8C9E6EEC2CA3383000263B50 /* InfoDetailView.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -238,14 +241,15 @@
 				8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */,
 				8CB4A82B2C6F677900BFC231 /* InfoView.swift in Sources */,
 				8CB4A8252C6F66E900BFC231 /* TodoView.swift in Sources */,
-				8CB4A82F2C6F68F600BFC231 /* ContentContainer.swift in Sources */,
+				8CF99DB52CA2745800BF45EF /* TodoItemContainer.swift in Sources */,
 				8C17B7842C70E1DD0094719B /* MapleInfo.swift in Sources */,
 				8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */,
 				8CB4A8352C6F69A800BFC231 /* Todo.swift in Sources */,
 				8C17B7822C70E15E0094719B /* MapleAPI.swift in Sources */,
 				8CB4A8322C6F699300BFC231 /* SettingView.swift in Sources */,
+				8C9E6EED2CA3383000263B50 /* InfoDetailView.swift in Sources */,
 				8C17B7802C70888B0094719B /* EditTodoView.swift in Sources */,
-				8CB4A82D2C6F67F100BFC231 /* CharacterInfo.swift in Sources */,
+				8CB4A82D2C6F67F100BFC231 /* InfoContainer.swift in Sources */,
 				8CB4A8282C6F674200BFC231 /* BottomTab.swift in Sources */,
 				8CB4A8162C6F665D00BFC231 /* maaApp.swift in Sources */,
 			);
