@@ -15,9 +15,9 @@ import SwiftUI
 class Todo {
     let id = UUID()
     var categoryRawValue: String
-    var category:Category {
+    var category: TodoCategory {
         get {
-            Category(rawValue: categoryRawValue) ?? .day
+            TodoCategory(rawValue: categoryRawValue) ?? .day
         }
         set {
             categoryRawValue = newValue.rawValue
@@ -55,7 +55,7 @@ class Todo {
     }
 }
 
-enum Category: String, CaseIterable {
+enum TodoCategory: String, CaseIterable {
     case day
     case week
     case event
