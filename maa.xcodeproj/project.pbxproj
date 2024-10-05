@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C17B7802C70888B0094719B /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B77F2C70888B0094719B /* EditTodoView.swift */; };
 		8C17B7822C70E15E0094719B /* MapleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B7812C70E15E0094719B /* MapleAPI.swift */; };
 		8C17B7842C70E1DD0094719B /* MapleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17B7832C70E1DD0094719B /* MapleInfo.swift */; };
 		8C9E6EED2CA3383000263B50 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E6EEC2CA3383000263B50 /* InfoDetailView.swift */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C17B77F2C70888B0094719B /* EditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoView.swift; sourceTree = "<group>"; };
 		8C17B7812C70E15E0094719B /* MapleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleAPI.swift; sourceTree = "<group>"; };
 		8C17B7832C70E1DD0094719B /* MapleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleInfo.swift; sourceTree = "<group>"; };
 		8C9E6EEC2CA3383000263B50 /* InfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				8CB4A8242C6F66E900BFC231 /* TodoView.swift */,
-				8C17B77F2C70888B0094719B /* EditTodoView.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -248,7 +245,6 @@
 				8C17B7822C70E15E0094719B /* MapleAPI.swift in Sources */,
 				8CB4A8322C6F699300BFC231 /* SettingView.swift in Sources */,
 				8C9E6EED2CA3383000263B50 /* InfoDetailView.swift in Sources */,
-				8C17B7802C70888B0094719B /* EditTodoView.swift in Sources */,
 				8CB4A82D2C6F67F100BFC231 /* InfoContainer.swift in Sources */,
 				8CB4A8282C6F674200BFC231 /* BottomTab.swift in Sources */,
 				8CB4A8162C6F665D00BFC231 /* maaApp.swift in Sources */,
