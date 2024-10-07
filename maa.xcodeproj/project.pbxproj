@@ -25,6 +25,8 @@
 		8CB4A83E2C6F74AE00BFC231 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83D2C6F74AE00BFC231 /* FirebaseMessaging */; };
 		8CB4A8472C6F9F6100BFC231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8462C6F9F6100BFC231 /* ContentView.swift */; };
 		8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */; };
+		8CC64DAA2CB452E400839C07 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC64DA92CB452E400839C07 /* TodoItem.swift */; };
+		8CC64DAC2CB4532800839C07 /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC64DAB2CB4532800839C07 /* AddTodo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		8CB4A8402C6F779200BFC231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8CB4A8462C6F9F6100BFC231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Component/ContentView.swift; sourceTree = "<group>"; };
 		8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTodo.swift; sourceTree = "<group>"; };
+		8CC64DA92CB452E400839C07 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		8CC64DAB2CB4532800839C07 /* AddTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				8CB4A8242C6F66E900BFC231 /* TodoView.swift */,
+				8CC64DAB2CB4532800839C07 /* AddTodo.swift */,
+				8CC64DA92CB452E400839C07 /* TodoItem.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -234,10 +240,12 @@
 			files = (
 				8CB4A8472C6F9F6100BFC231 /* ContentView.swift in Sources */,
 				8CB4A82B2C6F677900BFC231 /* InfoView.swift in Sources */,
+				8CC64DAC2CB4532800839C07 /* AddTodo.swift in Sources */,
 				8CB4A8252C6F66E900BFC231 /* TodoView.swift in Sources */,
 				8C17B7842C70E1DD0094719B /* MapleInfo.swift in Sources */,
 				8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */,
 				8CB4A8352C6F69A800BFC231 /* Todo.swift in Sources */,
+				8CC64DAA2CB452E400839C07 /* TodoItem.swift in Sources */,
 				8C17B7822C70E15E0094719B /* MapleAPI.swift in Sources */,
 				8CB4A8322C6F699300BFC231 /* SettingView.swift in Sources */,
 				8C9E6EED2CA3383000263B50 /* InfoDetailView.swift in Sources */,
