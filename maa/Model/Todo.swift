@@ -25,32 +25,14 @@ class Todo {
     }
     var content: String
     var checkDate: Date?
-    var isDone: Bool {
-        guard let check = checkDate else { return false }
-        switch self.category {
-        case .day:
-            return Calendar.current.isDate(
-                check,
-                equalTo: Date(),
-                toGranularity: .day)
-        case .week:
-            return Calendar.current.isDate(
-                check,
-                equalTo: Date(),
-                toGranularity: .weekOfYear)
-        case .event:
-            return false // TODO: - checkDate가 저번주 목요일 0시 ~ 이번주 목요일 0시 사이인지 확인
-        }
-    }
-    var isActive: Bool
-    // MARK: - 삭제 가능 여부
+    var isDone: Bool
     var isCustom: Bool
     
-    init(categoryRawValue: String, content: String, checkDate: Date? = nil, isActive: Bool, isCustom: Bool) {
+    init(categoryRawValue: String, content: String, checkDate: Date? = nil, isDone: Bool = false, isCustom: Bool = true) {
         self.categoryRawValue = categoryRawValue
         self.content = content
         self.checkDate = checkDate
-        self.isActive = isActive
+        self.isDone = isDone
         self.isCustom = isCustom
     }
 }
