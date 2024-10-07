@@ -55,14 +55,16 @@ struct AddTodo: View {
                         }
                         .frame(width: 250)
                     } else {
-                        TextField("", text: $newContent)
-                            .frame(width: 250)
+                            TextField("", text: $newContent)
+                                .frame(width: 250)
                     }
                     Spacer().frame(minWidth: 8)
                     Button {
                         guard let category = newCategory else { return }
                         let newTodo = Todo(categoryRawValue: category.rawValue, content: newContent)
                         modelContext.insert(newTodo)
+                        newCategory = nil
+                        newContent = ""
                     } label: {
                         Image(systemName: "plus")
                             .foregroundStyle(.accent)
