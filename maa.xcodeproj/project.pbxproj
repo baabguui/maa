@@ -23,9 +23,8 @@
 		8CB4A8392C6F73A300BFC231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */; };
 		8CB4A83C2C6F741200BFC231 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83B2C6F741200BFC231 /* FirebaseAnalytics */; };
 		8CB4A83E2C6F74AE00BFC231 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4A83D2C6F74AE00BFC231 /* FirebaseMessaging */; };
-		8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8462C6F9F6100BFC231 /* MaaView.swift */; };
+		8CB4A8472C6F9F6100BFC231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8462C6F9F6100BFC231 /* ContentView.swift */; };
 		8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */; };
-		8CF99DB52CA2745800BF45EF /* TodoItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +46,8 @@
 		8CB4A8382C6F73A300BFC231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CB4A83F2C6F776700BFC231 /* maa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maa.entitlements; sourceTree = "<group>"; };
 		8CB4A8402C6F779200BFC231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8CB4A8462C6F9F6100BFC231 /* MaaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MaaView.swift; path = Component/MaaView.swift; sourceTree = "<group>"; };
+		8CB4A8462C6F9F6100BFC231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Component/ContentView.swift; sourceTree = "<group>"; };
 		8CB4A8482C6FAA7200BFC231 /* BasicTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTodo.swift; sourceTree = "<group>"; };
-		8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,7 @@
 				8CB4A8292C6F676700BFC231 /* Info */,
 				8CB4A8232C6F66D600BFC231 /* Todo */,
 				8CB4A8152C6F665D00BFC231 /* maaApp.swift */,
-				8CB4A8462C6F9F6100BFC231 /* MaaView.swift */,
+				8CB4A8462C6F9F6100BFC231 /* ContentView.swift */,
 				8C17B7812C70E15E0094719B /* MapleAPI.swift */,
 				8CB2756D2C72429400AD39EA /* Config.xcconfig */,
 				8CB4A8192C6F665E00BFC231 /* Assets.xcassets */,
@@ -124,7 +122,6 @@
 			children = (
 				8CB4A8272C6F674200BFC231 /* BottomTab.swift */,
 				8CB4A82C2C6F67F100BFC231 /* InfoContainer.swift */,
-				8CF99DB42CA2745800BF45EF /* TodoItemContainer.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -235,10 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB4A8472C6F9F6100BFC231 /* MaaView.swift in Sources */,
+				8CB4A8472C6F9F6100BFC231 /* ContentView.swift in Sources */,
 				8CB4A82B2C6F677900BFC231 /* InfoView.swift in Sources */,
 				8CB4A8252C6F66E900BFC231 /* TodoView.swift in Sources */,
-				8CF99DB52CA2745800BF45EF /* TodoItemContainer.swift in Sources */,
 				8C17B7842C70E1DD0094719B /* MapleInfo.swift in Sources */,
 				8CB4A8492C6FAA7200BFC231 /* BasicTodo.swift in Sources */,
 				8CB4A8352C6F69A800BFC231 /* Todo.swift in Sources */,
