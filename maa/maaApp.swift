@@ -18,7 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 @main
-struct YourApp: App {
+struct maaApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var modelContainer: ModelContainer = {
@@ -31,11 +31,10 @@ struct YourApp: App {
         }
     }()
     @State var mapleAPI = MapleAPI()
-    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MaaView(mapleAPI: mapleAPI)
+                ContentView(mapleAPI: mapleAPI)
                     .modelContainer(modelContainer)
                     .environment(mapleAPI)
             }
