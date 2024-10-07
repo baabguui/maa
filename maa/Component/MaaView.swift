@@ -15,59 +15,60 @@ struct MaaView: View {
     @State var currentTab: Tab = .todo
     
     var body: some View {
-        GeometryReader { geometry in
-            let width = geometry.size.width * 0.97
-            let height = geometry.size.height
-            
-            VStack {
-                Spacer()
-                
-                CharacterInfo(InfoWidth: width,
-                              InfoHeight: height * 0.21)
-                
-                Spacer().frame(height: 3)
-                
-                ZStack {
-                    ContentContainer(currentTab: $currentTab,
-                                     containerWidth: width,
-                                     containerHeight: height * 0.7)
-                    VStack {
-                        Spacer()
-                        
-                        BottomTab(currentTab:$currentTab,
-                                  tabWidth: width)
-                    }.frame(height: height * 0.7)
+        VStack(spacing: 0) {
+            Spacer()
+            InfoView()
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(.maaBackground)
+                VStack {
+                    Spacer().frame(height: 20)
+                    switch currentTab {
+                    case .todo:
+                        TodoView()
+                            .frame(height: 480)
+                    case .info:
+                        InfoDetailView()
+                            .frame(height: 480)
+                    case .setting:
+                        SettingView()
+                            .frame(height: 480)
+                    }
+                    Spacer()
+                    BottomTab(currentTab:$currentTab)
+                    Spacer().frame(height: 8)
                 }
-                Spacer()
-                
-            }.frame(maxWidth: .infinity,
-                    alignment: .center)
+            }.frame(height: 565)
+            Spacer()
             
-            .onAppear {
-//                insertBasicTodo(modelContext: modelContext)
-                mapleAPI.getCharacterOcid(characterName: "포토킷") {heroInfo in
-                    let newHero = Hero(date: heroInfo.date, 
-                                       characterName: heroInfo.character_name,
-                                       worldName: heroInfo.world_name,
-                                       characterGender: heroInfo.character_gender,
-                                       characterClass: heroInfo.character_class,
-                                       characterClassLevel: heroInfo.character_class_level,
-                                       characterLevel: heroInfo.character_level,
-                                       characterExp: heroInfo.character_exp,
-                                       characterExpRate: heroInfo.character_exp_rate,
-                                       characterGuildName: heroInfo.character_guild_name,
-                                       characterImage: heroInfo.character_image,
-                                       characterDateCreate: heroInfo.character_date_create,
-                                       accessFlag: heroInfo.access_flag,
-                                       liberationQuestClearFlag: heroInfo.liberation_quest_clear_flag)
-                    modelContext.insert(newHero)
-                }
-            }
-        }
+        }.frame(maxWidth: .infinity,
+                alignment: .center)
+        
+        //        .onAppear {
+        //            //                insertBasicTodo(modelContext: modelContext)
+        //            mapleAPI.getCharacterOcid(characterName: "포토킷") {heroInfo in
+        //                let newHero = Hero(date: heroInfo.date,
+        //                                   characterName: heroInfo.character_name,
+        //                                   worldName: heroInfo.world_name,
+        //                                   characterGender: heroInfo.character_gender,
+        //                                   characterClass: heroInfo.character_class,
+        //                                   characterClassLevel: heroInfo.character_class_level,
+        //                                   characterLevel: heroInfo.character_level,
+        //                                   characterExp: heroInfo.character_exp,
+        //                                   characterExpRate: heroInfo.character_exp_rate,
+        //                                   characterGuildName: heroInfo.character_guild_name,
+        //                                   characterImage: heroInfo.character_image,
+        //                                   characterDateCreate: heroInfo.character_date_create,
+        //                                   accessFlag: heroInfo.access_flag,
+        //                                   liberationQuestClearFlag: heroInfo.liberation_quest_clear_flag)
+        //                modelContext.insert(newHero)
+        //            }
+        //        }
+        
     }
 }
 
 
-//#Preview {
-//    MaaView()
-//}
+#Preview {
+    MaaView(mapleAPI: MapleAPI())
+}
